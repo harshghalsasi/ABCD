@@ -17,7 +17,7 @@ views/js/main.js
 3. For randomPizzas querySelectorAll is replaced getElementsByClassName.
 4. Declared the pizzasDiv variable outside the loop, so only DOM call is made one.
 5. Declared the phase variable (var phase;) in the initialisation of the for loop so as to prevent it from being created every time the loop is executed.
-6. Reduced the no.of background pizzas to 24.
+6. Reduced the no.of background pizzas to display dynamically.
 
 
 views/css/style.css
