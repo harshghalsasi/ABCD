@@ -1,5 +1,37 @@
 ## Website Performance Optimization portfolio project
 
+Improvements Implemented:
+
+Index.html
+
+1. Compressed and resized pizzeria.jpg.
+2. Compressed profile picture.
+3. Inlined css.
+4. Removed request for google fonts and included the the required fonts in html.
+5. Compressed perfmatters.js
+
+views/js/main.js
+
+1. Refactored updatePositions function which involved removing a bunch of unnecessary calculations and simplifying the for-loop.
+2. Refactored changePizzaSizes function again removing unnecessary calculations and removed forced synchronous layout.
+3. For randomPizzas querySelectorAll is replaced getElementsByClassName.
+4. Declared the pizzasDiv variable outside the loop, so only DOM call is made one.
+5. Declared the phase variable (var phase;) in the initialisation of the for loop so as to prevent it from being created every time the loop is executed.
+6. Reduced the no.of background pizzas to 24.
+
+
+views/css/style.css
+1. Added transform: translateZ() to randomPizzaContainer.
+2. Added backface-visibility: hidden; property to randomPizzaContainer.
+
+views/pizza.html
+1. Compressed pizzeria.jpg
+
+
+
+
+## Website Performance Optimization portfolio project
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository and inspect the code.
